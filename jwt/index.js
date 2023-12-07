@@ -13,7 +13,7 @@ const app = express();
 
 const corsOptions = {
   exposedHeaders: ['Content-Length', 'token', 'Authorization'],
-  origin: ''
+  origin: 'http://localhost:3000'
 }
 
 app.use(cors(corsOptions));
@@ -34,6 +34,10 @@ app.use('/courses', courseRoutes);
 app.use("/quiz",quizRoutes);
 
 app.use('/studentscore', studentscoreRoutes);
+
+app.get("/", (req, res) => {
+res.json("Hello")
+})
 
 
 app.listen(PORT, () => console.log(`Running API on ${PORT}`))

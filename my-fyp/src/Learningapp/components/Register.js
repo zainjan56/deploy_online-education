@@ -22,7 +22,7 @@ const Register = () => {
   const register = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/api/user/register", {
+      .post("https://deploy-online-education.vercel.app/api/user/register", {
         name: fullname,
         email: email,
         password: password,

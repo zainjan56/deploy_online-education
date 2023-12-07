@@ -35,5 +35,9 @@ app.use("/quiz",quizRoutes);
 
 app.use('/studentscore', studentscoreRoutes);
 
+app.get("/", (req, res) => {
+res.json("Hello")
+})
+
 
 app.listen(PORT, () => console.log(`Running API on ${PORT}`))

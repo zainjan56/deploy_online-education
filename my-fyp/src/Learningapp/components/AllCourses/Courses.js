@@ -44,7 +44,7 @@ const Courses = () => {
               <Card id="courseCard">
                 <Card.Img
                   variant="top"
-                  src={`http://localhost:3001/${course.imagePath}`}
+                  src={`https://deploy-online-education.vercel.app/${course.imagePath}`}
                   alt="Course"
                 />
                 <Card.Body>

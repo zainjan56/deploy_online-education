@@ -12,8 +12,7 @@ const PORT = process.env.PORT || 3001
 const app = express();
 
 const corsOptions = {
-  exposedHeaders: ['Content-Length', 'token', 'Authorization'],
-  origin: 'http://localhost:3000'
+  exposedHeaders: ['Content-Length', 'token', 'Authorization']
 }
 
 app.use(cors(corsOptions));

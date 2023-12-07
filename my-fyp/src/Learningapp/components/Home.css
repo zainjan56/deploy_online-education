@@ -1,0 +1,48 @@
+.homeLeft {
+    height: 400px;
+}
+
+.lefthomeTitle {
+    color: rgb(44, 42, 150);
+    text-align: center;
+}
+
+.lefttitleImage {
+    width: 30%;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.lefthomeMessage {
+    text-align: center;
+    color: rgb(44, 42, 150);
+}
+
+.getstartedBtn {
+    width: 130px;
+    margin-left: 120px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(44, 42, 150);
+    font-family: 'Times New Roman', Times, serif;
+}
+.welcomeUser {
+    margin-top: 10px;
+    color: rgb(26, 20, 66);
+}
+
+.homeRight {
+    height: 400px;
+}
+
+.mission {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(237, 243, 249);
+}
+
+.missionOnline {
+    text-align: center;
+}

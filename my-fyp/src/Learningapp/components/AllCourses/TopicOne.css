@@ -1,0 +1,24 @@
+.firstTopic {
+  overflow-y: auto;
+}
+
+.videoArea {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 238, 225);
+  border-radius: 20px;
+}
+
+.videoFrame {
+    border-radius: 20px;
+}
+
+.courseMaterials {
+padding: 20px;
+}
+
+.variables-details {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

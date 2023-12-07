@@ -13,7 +13,7 @@ const app = express();
 
 const corsOptions = {
   exposedHeaders: ['Content-Length', 'token', 'Authorization'],
-  origin: 'http://localhost:3000'
+  origin: 'https://deploy-online-education-frontend.vercel.app/home'
 }
 
 app.use(cors(corsOptions));

@@ -37,7 +37,7 @@ const TaddCourses = () => {
 
     try {
       await axios
-        .post("http://localhost:3001/courses/addcourse", formData, {
+        .post("https://deploy-online-education.vercel.app/courses/addcourse", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

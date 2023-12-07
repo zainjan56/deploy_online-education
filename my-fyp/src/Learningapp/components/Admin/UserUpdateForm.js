@@ -16,7 +16,7 @@ const UserUpdateForm = ({ user, onComplete, onCancel }) => {
   const handleUpdateSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:3001/api/user/users/${user._id}`, formData)
+      .put(`https://deploy-online-education.vercel.app/api/user/users/${user._id}`, formData)
       .then((response) => {
         onComplete();
       })

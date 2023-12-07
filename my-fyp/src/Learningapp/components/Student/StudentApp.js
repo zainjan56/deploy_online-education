@@ -14,7 +14,7 @@ const StudentApp = () => {
   useEffect(() => {
 
       axios
-      .get(`http://localhost:3001/studentscore/student-scores/${studentid}`)
+      .get(`https://deploy-online-education.vercel.app/studentscore/student-scores/${studentid}`)
       .then((response) => {
         // setQuizscore(response.data.quizScore);
         // setReadingScore(response.data.readingScore);

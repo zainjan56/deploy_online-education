@@ -12,7 +12,7 @@ const CourseList = () => {
   useEffect(() => {
     // Fetch courses when the component mounts
     axios
-      .get("http://localhost:3001/courses/addcourse")
+      .get("https://deploy-online-education.vercel.app/courses/addcourse")
       .then((response) => {
         setCourses(response.data);
       })

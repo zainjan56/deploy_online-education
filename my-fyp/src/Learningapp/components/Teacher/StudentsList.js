@@ -11,7 +11,7 @@ const StudentsList = () => {
     useEffect(() => {
         // Make a GET request to fetch users data from your backend API
         axios
-          .get("http://localhost:3001/api/user/users")
+          .get("https://deploy-online-education.vercel.app/api/user/users")
           .then((response) => {
             setUsers(response.data);
           })

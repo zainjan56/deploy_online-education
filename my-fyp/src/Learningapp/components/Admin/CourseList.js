@@ -16,7 +16,7 @@ const CourseList = () => {
   useEffect(() => {
     // Fetch courses when the component mounts
     axios
-      .get("http://localhost:3001/courses/addcourse")
+      .get("https://deploy-online-education.vercel.app/courses/addcourse")
       .then((response) => {
         setCourses(response.data);
       })
@@ -28,7 +28,7 @@ const CourseList = () => {
   const handleDelete = async (id) => {
     try {
       await axios
-        .delete(`http://localhost:3001/courses/deletecourse/${id}`)
+        .delete(`https://deploy-online-education.vercel.app/courses/deletecourse/${id}`)
         .then((res) => {
           NotificationManager.success(
             "Course has been successfully Delete.",

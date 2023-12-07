@@ -33,7 +33,7 @@ const AdminpasswordChange = () => {
   
     try {
       await axios.put(
-        `http://localhost:3001/api/user/update/${id}`,
+        `https://deploy-online-education.vercel.app/api/user/update/${id}`,
         formData
       );
       //console.log(response.data);

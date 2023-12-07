@@ -34,7 +34,7 @@ const AddQuiz = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/quiz/createquiz", formData) // Use Axios to make a POST request
+      .post("https://deploy-online-education.vercel.app/quiz/createquiz", formData) // Use Axios to make a POST request
       .then((response) => {
         console.log(response.data);
         // Clear the form or provide user feedback

@@ -15,7 +15,7 @@ const AdminHome = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/user/userCounts")
+    fetch("https://deploy-online-education.vercel.app/api/user/userCounts")
       .then((response) => response.json())
       .then((data) => {
         setAdminCount(data.adminCount);
@@ -29,7 +29,7 @@ const AdminHome = () => {
 
   useEffect(() => {
     // Make a GET request to fetch users data from your backend API
-    axios.get("http://localhost:3001/api/user/users")
+    axios.get("https://deploy-online-education.vercel.app/api/user/users")
       .then((response) => {
         const users = response.data;
         const adminUsers = users.filter((user) => user.role === "Admin");

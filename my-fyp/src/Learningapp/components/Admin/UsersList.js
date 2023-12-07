@@ -16,7 +16,7 @@ const UsersList = () => {
   useEffect(() => {
     // Make a GET request to fetch users data from your backend API
     axios
-      .get("http://localhost:3001/api/user/users")
+      .get("https://deploy-online-education.vercel.app/api/user/users")
       .then((response) => {
         setUsers(response.data);
       })
@@ -34,7 +34,7 @@ const UsersList = () => {
     if (confirmDeletion) {
       // Make a DELETE request to delete the user's record on the backend
       axios
-        .delete(`http://localhost:3001/api/user/users/${userId}`)
+        .delete(`https://deploy-online-education.vercel.app/api/user/users/${userId}`)
         .then(() => {
           // Update the local state by removing the deleted user
           const updatedUsers = users.filter((user) => user._id !== userId);

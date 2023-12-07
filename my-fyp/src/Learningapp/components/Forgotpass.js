@@ -21,7 +21,7 @@ const Forgotpass = () => {
   const login = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/api/user/forgot-password", {
+      .post("https://deploy-online-education.vercel.app/api/user/forgot-password", {
         email: email,
       })
       .then((res) => {

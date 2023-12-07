@@ -23,7 +23,7 @@ const Login = () => {
   const login = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/api/user/login", {
+      .post("https://deploy-online-education.vercel.app/api/user/login", {
         email: email,
         password: password,
       })

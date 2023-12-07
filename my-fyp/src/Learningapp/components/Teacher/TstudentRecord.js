@@ -18,7 +18,7 @@ const TstudentRecord = () => {
     const fetchStudents = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/studentscore/students"
+          "https://deploy-online-education.vercel.app/studentscore/students"
         ); // Replace with your API endpoint
         if (response.status === 200) {
           setStudents(response.data);

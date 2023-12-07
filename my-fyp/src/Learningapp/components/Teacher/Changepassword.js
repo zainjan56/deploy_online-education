@@ -31,7 +31,7 @@ const Changepassword = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:3001/api/user/change-password/${id}`,
+        `https://deploy-online-education.vercel.app/api/user/change-password/${id}`,
         formData
       );
       console.log(response.data);

@@ -18,7 +18,7 @@ const Course = () => {
   useEffect(() => {
     // Fetch the specific course's details based on the course ID
     axios
-      .get(`http://localhost:3001/courses/addcourse/${id}`)
+      .get(`https://deploy-online-education.vercel.app/courses/addcourse/${id}`)
       .then((response) => {
         setCourse(response.data);
         dispatch(cartActions.addItemToCart(response.data));

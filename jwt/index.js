@@ -13,7 +13,7 @@ const app = express();
 
 const corsOptions = {
   exposedHeaders: ['Content-Length', 'token', 'Authorization'],
-  origin: 'http://localhost:3000'
+  origin: ''
 }
 
 app.use(cors(corsOptions));

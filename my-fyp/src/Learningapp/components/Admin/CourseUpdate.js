@@ -31,7 +31,7 @@ const CourseUpdate = ({ course, onClose, onUpdate }) => {
 
     try {
       await axios.put(
-        `http://localhost:3001/courses/updatecourse/${course._id}`,
+        `https://deploy-online-education.vercel.app/courses/updatecourse/${course._id}`,
         formData,
         {
           headers: {

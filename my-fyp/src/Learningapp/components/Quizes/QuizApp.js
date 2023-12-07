@@ -28,7 +28,7 @@ const QuizApp = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/quiz/questions")
+      .get("https://deploy-online-education.vercel.app/quiz/questions")
       .then((response) => {
         setQuestions(response.data);
       })

@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001
 const app = express();
 
 const corsOptions = {
-  origin: ["https://deploy-online-education-frontend.vercel.app/home"]
+  // origin: ["https://deploy-online-education-frontend.vercel.app/home"]
   exposedHeaders: ['Content-Length', 'token', 'Authorization']
 }
 

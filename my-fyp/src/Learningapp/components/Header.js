@@ -18,15 +18,16 @@ const Header = () => {
       expand="lg"
       className="bg-body-tertiary"
     >
-      <img
-        src={logo}
-        alt="website logo"
-        style={{ width: "5%", height: "5%" }}
-      />
-      <Container>
-        <Navbar.Brand>
-          <b>Online-Education</b>
-        </Navbar.Brand>
+      <Navbar.Brand>
+            <img
+              alt=""
+              src={logo}
+              width="35"
+              height="35"
+              className="d-inline-block align-top"
+            />{' '}
+            <b>Online Education</b>
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

@@ -36,13 +36,6 @@
     height: 400px;
 }
 
-.mission {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: rgb(237, 243, 249);
-}
-
-.missionOnline {
-    text-align: center;
+.cardFeature {
+    height: 157px;
 }

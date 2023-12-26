@@ -39,3 +39,18 @@
 .cardFeature {
     height: 157px;
 }
+
+@media screen and (max-width: 1150px) {
+    #featureStyle1 {
+        height: 100%;
+    }
+    #featureStyle2 {
+        height: 100%;
+    }
+    #featureStyle3 {
+        height: 100%;
+    }
+    #featureStyle4 {
+        height: 100%;
+    }
+}
